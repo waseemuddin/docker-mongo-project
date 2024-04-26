@@ -1,7 +1,7 @@
 FROM node:13-alpine
 
-ENV MONGO_DB_USERNAME=admin \
-    MONGO_DB_PWD=password
+ENV MONGO_DB_USERNAME=fui \
+    MONGO_DB_PWD=fui123
 
 RUN mkdir -p /home/app
 
@@ -14,4 +14,4 @@ WORKDIR /home/app
 RUN npm install
 
 # no need for /home/app/server.js because of WORKDIR
-CMD ["node", "server.js"]
+CMD ["node", "server.js"] 
